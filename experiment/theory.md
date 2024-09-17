@@ -20,12 +20,13 @@ In an Inverting Schmitt Trigger, the input is applied to the inverting terminal 
 
 From the circuit:
 
-When Vinis slightly greater than Vref, the output becomes -V<sub>sat and if V<sub>in is slightly less that -V<sub>ref</sub> more negative than -V<sub>ref</sub>, then output becomes V<sub>sat</sub>. Hence, the output voltage V<sub>o</sub> is either at V<sub>sat</sub> or -V<sub>sat</sub> and the input voltage at which these state changes occur can be controlled using R<sub>1 and R<sub>2.    
+When V<sub>in</sub> is slightly greater than V<sub>ref</sub>, the output becomes -V<sub>sat</sub> and if V<sub>in</sub> is slightly less that -V<sub>ref</sub> more negative than -V<sub>ref</sub>, then output becomes V<sub>sat</sub>. Hence, the output voltage V<sub>o</sub> is either at V<sub>sat</sub> or -V<sub>sat</sub> and the input voltage at which these state changes occur can be controlled using R<sub>1</sub> and R<sub>2</sub>.    
 The values of V<sub>ref</sub> and -V<sub>ref</sub> can be formulated as follows:
 
 $$ V_{ref}= \frac{R_1}{(R_1+R_2)} \times (V_{o}) $$
 
 where, V<sub>o</sub>=V<sub>sat</sub>
+
 - $$ V_{ref}= \frac{R_1}{(R_1+R_2)} \times (-V_{o}) $$ 
 
 where, V<sub>o</sub>= -V<sub>sat</sub>
