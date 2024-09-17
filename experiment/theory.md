@@ -27,7 +27,7 @@ $$ V_{ref}= \frac{R_1}{(R_1+R_2)} \times (V_{o}) $$
 
 where, V<sub>o</sub>=V<sub>sat</sub>
 
-- $$ V_{ref}= \frac{R_1}{(R_1+R_2)} \times (-V_{o}) $$ 
+$$ - V_{ref}= \frac{R_1}{(R_1+R_2)} \times (-V_{o}) $$ 
 
 where, V<sub>o</sub>= -V<sub>sat</sub>
 V<sub>ref</sub> is the upper threshold voltage V<sub>UTP</sub> and -V<sub>ref</sub> is the lower threshold voltage V<sub>LTP</sub>
