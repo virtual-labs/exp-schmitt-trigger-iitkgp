@@ -2,37 +2,75 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Schmitt trigger is an example of ------ circuit",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Amplifier",
+        "b": "Oscillator",
+        "c": "Power supply",
+        "d": "Switching"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In Schmitt trigger circuit, op-amp switches between",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Cut-off and negative saturation",
+        "b": "Negative and positive saturation",
+        "c": "Slight conduction and cut-off",
+        "d": "Cut-off and positive saturation"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If the power supply voltage applied to the op-amp that has a open loop gain of 100db is ±20V, the op-amp saturation voltage is",
+      "answers": {
+        "a": "20mV",
+        "b": "2mV",
+        "c": "20µV",
+        "d": "200µV"
       },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The operation of a Schmitt trigger is similar to that of a",
+      "answers": {
+        "a": "Full wave rectifier",
+        "b": "Series clipper",
+        "c": "Polarity detector",
+        "d": "Clamper"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The main application of Schmitt trigger is in",
+      "answers": {
+        "a": "Amplifiers",
+        "b": "Oscillators",
+        "c": "Sine wave to square wave converters",
+        "d": "Rectifiers"
+      },
+      
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The speed of switching in the Schmitt trigger depends on",
+      "answers": {
+        "a": "Open loop gain",
+        "b": "Input resistor",
+        "c": "Hysteresis",
+        "d": "Feedback resistor"
+      },
+      
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

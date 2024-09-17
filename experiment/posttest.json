@@ -2,37 +2,75 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The speed of operation of Schmitt trigger depends on",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "op-amp gain",
+        "b": "Supply voltage",
+        "c": "op-amp configuration",
+        "d": "Rate of change of input"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+     
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The feedback used in Schmitt trigger is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Degenerative",
+        "b": "Regenerative",
+        "c": "Series",
+        "d": "Shunt"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The value of cross over at increasing or decreasing input are called",
+      "answers": {
+        "a": "Cut-off points",
+        "b": "Saturation points",
+        "c": "Trip-point",
+        "d": "Null points"
       },
+      
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The Schmitt trigger could also be used for",
+      "answers": {
+        "a": "Voltage level detection",
+        "b": "Astable operation",
+        "c": "Monostable operation",
+        "d": "Voltage limiting"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The Schmitt trigger could be used as",
+      "answers": {
+        "a": "Voltage detector",
+        "b": "Astable multivibrator",
+        "c": "Monostable multivibrator",
+        "d": "All of the above"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The switching speed could be improved by using",
+      "answers": {
+        "a": "Zener diode at output",
+        "b": "Two Zener diode connected back to back at output",
+        "c": "Feed back resistor",
+        "d": "Capacitor in feedback"
+      },
+      
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
