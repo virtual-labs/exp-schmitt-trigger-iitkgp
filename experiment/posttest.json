@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "The speed of operation of Schmitt trigger depends on",
+      "question": "1. The speed of operation of Schmitt trigger depends on",
       "answers": {
         "a": "op-amp gain",
         "b": "Supply voltage",
@@ -14,7 +14,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The feedback used in Schmitt trigger is",
+      "question": "2. The feedback used in Schmitt trigger is",
       "answers": {
         "a": "Degenerative",
         "b": "Regenerative",
@@ -26,7 +26,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The value of cross over at increasing or decreasing input are called",
+      "question": "3. The value of cross over at increasing or decreasing input are called",
       "answers": {
         "a": "Cut-off points",
         "b": "Saturation points",
@@ -38,7 +38,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The Schmitt trigger could also be used for",
+      "question": "4. The Schmitt trigger could also be used for",
       "answers": {
         "a": "Voltage level detection",
         "b": "Astable operation",
@@ -50,7 +50,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The Schmitt trigger could be used as",
+      "question": "5. The Schmitt trigger could be used as",
       "answers": {
         "a": "Voltage detector",
         "b": "Astable multivibrator",
@@ -62,7 +62,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The switching speed could be improved by using",
+      "question": "6. The switching speed could be improved by using",
       "answers": {
         "a": "Zener diode at output",
         "b": "Two Zener diode connected back to back at output",
