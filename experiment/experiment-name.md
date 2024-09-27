@@ -1,1 +1,1 @@
-## Experiment name
+## Schmitt Trigger
