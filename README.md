@@ -1,10 +1,10 @@
 ## Introduction
 
 
-<b>Discipline | <b>Electronics and Communication and Engineering
+<b>Discipline | <b>Electronics and Communication Engineering
 :--|:--|
 <b> Lab | <b>  Analog Electronics Circuits Virtual Laboratory
-<b> Experiment|     <b> Schmitt Trigger
+<b> Experiment Name|     <b> Schmitt Trigger
 
 ### About the Experiment
 
