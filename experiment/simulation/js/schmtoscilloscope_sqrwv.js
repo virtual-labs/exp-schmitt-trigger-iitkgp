@@ -17,12 +17,12 @@ var tmaxs;// in msec  0.001; //in sec
 
 function posiy2chnge() {
     posy2 = document.getElementById("positiony2").value;
-    
+
     if (flag == 2) {
-       drawsquarewv();
+        drawsquarewv();
     }
 
-   
+
 }
 
 function posix2chnge() {
@@ -31,10 +31,10 @@ function posix2chnge() {
         drawsine();
     }
     if (flag == 2) {
-       drawsquarewv();
+        drawsquarewv();
     }
 
-   
+
 }
 
 function ampfng() {
@@ -46,11 +46,11 @@ function ampfng() {
         drawsquarewv();
     }
 
-   if(flag==3){
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
-       grndhlfrc();
+    if (flag == 4) {
+        grndhlfrc();
     }
 }
 
@@ -60,15 +60,15 @@ function freqfng() {
         drawsine();
     }
     if (flag == 2) {
-       drawsquarewv();
+        drawsquarewv();
     }
-if(flag==3){
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
-       grndhlfrc();
+    if (flag == 4) {
+        grndhlfrc();
     }
-   
+
 }
 
 //----------------------------------------code for drawing rectify output--------------------------------------------------//
@@ -80,16 +80,16 @@ function drawsquarewv() {
     // fill canvas
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-		document.getElementById("chhn1").disabled = false;
-        document.getElementById("chhn2").disabled = false;
-        document.getElementById("dual").disabled = false;
-        document.getElementById("grnd").disabled = false;
-		document.getElementById("xymd").disabled = false;
+    document.getElementById("chhn1").disabled = false;
+    document.getElementById("chhn2").disabled = false;
+    document.getElementById("dual").disabled = false;
+    document.getElementById("grnd").disabled = false;
+    document.getElementById("xymd").disabled = false;
     drawGrid(ctx);
     drawAxis();
     schmtsqr();
-    
-  
+
+
 }
 
 function schmtsqr() {
@@ -98,28 +98,28 @@ function schmtsqr() {
     frqfng = document.getElementById("fq-knob-fng").value;
     phsl = document.getElementById("positionx").value;
     posy2 = document.getElementById("positiony2").value;
-	tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  0.001; //in sec
-	var vref=3.33;
-	var vcc =12;
-	var vutp = 4;//3.48;
-	var vltp = -4;//3.02;
-	var vsat = 0.9*vcc;
-	var shift = Math.asin(vutp/vp);
-//---------------------------------------------------------rectified  wave-------------------------------------------------------------------------------//
+    tmaxs = document.getElementById("fq-knob").value * 10 * Math.pow(10, -3);// in msec  0.001; //in sec
+    var vref = 3.33;
+    var vcc = 12;
+    var vutp = 4;//3.48;
+    var vltp = -4;//3.02;
+    var vsat = 0.9 * vcc;
+    var shift = Math.asin(vutp / vp);
+    //---------------------------------------------------------rectified  wave-------------------------------------------------------------------------------//
 
-    var x = new Array(), y = new Array(),ys = new Array();  // x,y plotting variables
+    var x = new Array(), y = new Array(), ys = new Array();  // x,y plotting variables
     var dt, tstart, tstop;             // time variables
     flag = 2;
     // define plot paramaters
     tstart = 0; //in sec
     tstop = tmaxs;
     dt = (tstop - tstart) / (101 - 1);// time increment over N points
-	
+
     // create function 
     for (var i = 0; i < axes.N; i++) {
         x[i] = tstart + i * dt;
-        y[i] = vsat * Math.sin(2 * 3.1415 * frqfng * x[i] + 90+ phsl * 3.1415 / 180);
-		ys[i] = vsat * Math.sign(y[i]);
+        y[i] = vsat * Math.sin(2 * 3.1415 * frqfng * x[i] + 90 + phsl * 3.1415 / 180);
+        ys[i] = vsat * Math.sign(y[i]);
     }
 
     var i, x0, y0, xscale, yscale, xp, yp;
@@ -134,7 +134,7 @@ function schmtsqr() {
     ctx.strokeStyle = "#ff6600";
     var p = y0 - parseInt(posy2) * yscale;
     for (i = 0; i < axes.N; i++) {
-	//if(y[i]<3.48){
+        //if(y[i]<3.48){
         // translate actual x,y to plot xp,yp
         xp = x0 + x[i] * xscale;
         yp = y0 - ys[i] * yscale + p - 175;
@@ -144,13 +144,13 @@ function schmtsqr() {
             ctx.moveTo(xp, yp);
         else
             ctx.lineTo(xp, yp);
-   // }
-	
-	
+        // }
+
+
     }
-	//alert(y);
-	//alert(yp);
-   
+    //alert(y);
+    //alert(yp);
+
     ctx.stroke();
 
 }

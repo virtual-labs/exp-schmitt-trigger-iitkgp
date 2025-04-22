@@ -7,7 +7,7 @@ var vmaxs;  //in volt
 var tmaxs; // in msec  0.001; //in sec
 $(document).ready(function () {
 
-//------------------------------knob of frequency(tmax)time/div(ms/div)----------------------//
+    //------------------------------knob of frequency(tmax)time/div(ms/div)----------------------//
     $("#fq-knob").knob({
         readOnly: false,
         fgColor: '#6495ed', //'#999999',
@@ -25,14 +25,14 @@ $(document).ready(function () {
                 drawsine();
             }
             if (flag == 2) {
-                 drawsquarewv();
+                drawsquarewv();
             }
-      if(flag==3){
-        bthdhlfrc();
-    }
-    if(flag==4){
-       grndhlfrc();
-    }
+            if (flag == 3) {
+                bthdhlfrc();
+            }
+            if (flag == 4) {
+                grndhlfrc();
+            }
         }
     });
     //-----------------------knob of amplitude1(vmax/div)-------------------------------//
@@ -43,7 +43,7 @@ $(document).ready(function () {
         width: 100,
         height: 80,
         // cursor: pointer,
-       min: 0.05,
+        min: 0.05,
         max: 10,
         step: 0.1,
         angleOffset: -125,
@@ -52,12 +52,12 @@ $(document).ready(function () {
             if (flag == 1) {
                 drawsine();
             }
-            if(flag==3){
-        bthdhlfrc();
-    }
-    if(flag==4){
-       grndhlfrc();
-    }
+            if (flag == 3) {
+                bthdhlfrc();
+            }
+            if (flag == 4) {
+                grndhlfrc();
+            }
         }
     });
     //-----------------------knob of amplitude2(vmax/div)-------------------------------//
@@ -74,21 +74,21 @@ $(document).ready(function () {
         angleOffset: -125,
         angleArc: 250,
         'change': function (v) {
-           
+
             if (flag == 2) {
-                 drawsquarewv();
+                drawsquarewv();
             }
 
-           if(flag==3){
-        bthdhlfrc();
-    }
-    if(flag==4){
-       grndhlfrc();
-    }
+            if (flag == 3) {
+                bthdhlfrc();
+            }
+            if (flag == 4) {
+                grndhlfrc();
+            }
         }
 
     });
-//------------------------------knob of frequency(hz)----------------------//
+    //------------------------------knob of frequency(hz)----------------------//
     $("#fq-knob-fng").knob({
         readOnly: false,
         fgColor: '#6495ed', //'#999999',
@@ -106,15 +106,15 @@ $(document).ready(function () {
                 drawsine();
             }
             if (flag == 2) {
-                  drawsquarewv();
+                drawsquarewv();
             }
 
-          if(flag==3){
-        bthdhlfrc();
-    }
-    if(flag==4){
-       grndhlfrc();
-    }
+            if (flag == 3) {
+                bthdhlfrc();
+            }
+            if (flag == 4) {
+                grndhlfrc();
+            }
         }
 
     });
@@ -136,14 +136,14 @@ $(document).ready(function () {
                 drawsine();
             }
             if (flag == 2) {
-                  drawsquarewv();
+                drawsquarewv();
             }
-           if(flag==3){
-        bthdhlfrc();
-    }
-    if(flag==4){
-       grndhlfrc();
-    }
+            if (flag == 3) {
+                bthdhlfrc();
+            }
+            if (flag == 4) {
+                grndhlfrc();
+            }
         }
 
     });
