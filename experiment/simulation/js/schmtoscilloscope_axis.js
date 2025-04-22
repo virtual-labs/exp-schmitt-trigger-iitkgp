@@ -110,8 +110,8 @@ function drawAxis() {
          axes.yscale = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
      }
     if(flag==3){
-         axes.yscale = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
-         axes.yscale = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
+         axes.yscale1 = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
+         axes.yscale2 = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
      }
     axes.doNegativeX = true;
     ctx.lineWidth = 0.5;
