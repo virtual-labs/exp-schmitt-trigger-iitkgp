@@ -1,0 +1,77 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Schmitt trigger is an example of ------ circuit",
+      "answers": {
+        "a": "Amplifier",
+        "b": "Oscillator",
+        "c": "Power supply",
+        "d": "Switching"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In Schmitt trigger circuit, op-amp switches between",
+      "answers": {
+        "a": "Cut-off and negative saturation",
+        "b": "Negative and positive saturation",
+        "c": "Slight conduction and cut-off",
+        "d": "Cut-off and positive saturation"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. If the power supply voltage applied to the op-amp that has a open loop gain of 100db is ±20V, the op-amp saturation voltage is",
+      "answers": {
+        "a": "20mV",
+        "b": "2mV",
+        "c": "20µV",
+        "d": "200µV"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The operation of a Schmitt trigger is similar to that of a",
+      "answers": {
+        "a": "Full wave rectifier",
+        "b": "Series clipper",
+        "c": "Polarity detector",
+        "d": "Clamper"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The main application of Schmitt trigger is in",
+      "answers": {
+        "a": "Amplifiers",
+        "b": "Oscillators",
+        "c": "Sine wave to square wave converters",
+        "d": "Rectifiers"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. The speed of switching in the Schmitt trigger depends on",
+      "answers": {
+        "a": "Open loop gain",
+        "b": "Input resistor",
+        "c": "Hysteresis",
+        "d": "Feedback resistor"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
